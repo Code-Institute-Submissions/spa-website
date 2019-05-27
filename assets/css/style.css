@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+
+/*-----Navigation bar----*/
+.navbar-expand-lg {
+  background-color: #B7927E;
+  color: #f2f2f2;
+}
+
+/*------Landing Page----*/
+
+.home-area {
+    background: url('../../images/landing.jpg');
+    background-position: center center;
+    -webkit-background-size:cover;
+    background-size:cover;
+    height: 100vh;
+}
+
+.home-text {
+  text-align: center;
+  margin-top: 30%;
+  font-size: 96px;
+  color:#D37129;
+}
+
+.btn-primary {
+  background-color: #f2f2f2;
+  color: #5C3C2A;
+  border-color: #f2f2f2;
+  font-weight: bold;
+  position: center;
+  margin-top: 10%;
+  margin-left: 45%;
+}
+
+
+/*--------------About Us----------*/
+
+.about-us {
+  background-color: #C6A898;
+  margin: 0px;
+}
+
+.about h1 {
+  top: 35%;
+  text-align: center;
+  color: #5C3C2A;
+  font-size: 80px;
+  
+}
+
+.description p {
+  text-align: left;
+  font-size: 36px;
+  color: #5C3C2A;
+  
+}
+.details {
+  
+  bottom: 0;
+  padding-top: 10%;
+  font-size: 1rem;
+  
+}
+
+.details p {
+  text-align: left;
+  color:#5C3C2A;
+  
+
+}
+#about {
+     background-image: url(' ../../images/aboutus.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+}
+
+/*------------------Massage---------------*/
+
+.massage {
+  background-color: #BCBABA;
+  color:#f2f2f2;
+  margin: 0px;
+}
+
+.massage h1 {
+
+font-weight: bold;
+font-size: 80px;
+display: flex;
+text-align: center;
+margin-left: 25%;
+color: #F2F2F2;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.massage p {
+  font-size: 36px;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.progress-bar {
+  background-color:#725646;
+  
+}
+
+tbody {
+  font-weight: normal;
+  font-size: 36px;
+  color:#f2f2f2;
+}
+
+thead {
+  font-size: 36px;
+  color:#f2f2f2;
+}
+
+.cover {
+     background-image: url(' ../../images/massagepic.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+}
+
+
+/*------------Bathing---------*/
+
+bathing {
+  margin: 0px;
+}
+
+
+
+#hero-bath {
+  background-image: url('../../images/bath.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -10;
+}
+
+#hero-overlay-bath {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  width:100%;
+  z-index:-5;
+}
+
+.titlebath {
+  font-size: 80px;
+  text-align: center;
+}
+/*-----------Offer----------*/
+
+offer {
+  margin: 0px;
+}
+
+
+
+#hero-offer {
+  background-image: url('../../images/backgroundflwr.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -10;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+/*----------Form----------*/
+
+form {
+  margin: 0px;
+}
+
+#hero-cal {
+  background-image: url('../../images/calendar.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -10;
+}
+
+#hero-overlay-cal {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  width:100%;
+  z-index:-5;
+}
+
+#form {
+  color: #f2f2f2;
+  position: center;
+  }
+  
+  .h1 form {
+    position: center;
+  }
+
+
+/*--------Footer------*/
