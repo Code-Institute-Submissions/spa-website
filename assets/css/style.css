@@ -1,38 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-
+body {
+  overflow-x: hidden;
+}
 
 /*-----Navigation bar----*/
-.navbar-expand-lg {
-  background-color: #B7927E;
+
+.navbar-brand {
+  height: 2rem;
   color: #f2f2f2;
+  font-family: inherit;
+  font-size: 24px;
 }
 
 /*------Landing Page----*/
 
 .home-area {
-    background: url('../../images/landing.jpg');
-    background-position: center center;
-    -webkit-background-size:cover;
-    background-size:cover;
-    height: 100vh;
+  background-attachment: fixed;
+  background: url('../../images/landing.jpg');
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-.home-text {
+#titlepg {
   text-align: center;
-  margin-top: 30%;
+  margin-top: 45%;
   font-size: 96px;
-  color:#D37129;
+  color: #C6A898;
+  text-shadow: 1px 1px 2px black;
 }
 
-.btn-primary {
+
+
+#buttonpg {
   background-color: #f2f2f2;
   color: #5C3C2A;
   border-color: #f2f2f2;
   font-weight: bold;
-  position: center;
+  position: center center;
   margin-top: 10%;
-  margin-left: 45%;
+  margin-left: 30%;
+
 }
 
 
@@ -41,96 +52,113 @@
 .about-us {
   background-color: #C6A898;
   margin: 0px;
+
+
+}
+
+.about {
+  margin: 30px;
 }
 
 .about h1 {
   top: 35%;
   text-align: center;
   color: #5C3C2A;
-  font-size: 80px;
-  
+  font-size: 48px;
+  margin-bottom: 40px;
+  padding: 30px;
+
 }
 
 .description p {
   text-align: left;
-  font-size: 36px;
+  font-size: 24px;
   color: #5C3C2A;
-  
+
 }
+
 .details {
-  
+
   bottom: 0;
   padding-top: 10%;
   font-size: 1rem;
-  
+
 }
 
 .details p {
   text-align: left;
-  color:#5C3C2A;
-  
+  color: #5C3C2A;
+
 
 }
+
 #about {
-     background-image: url(' ../../images/aboutus.jpg');
-     background-size: cover;
-     background-repeat: no-repeat;
-     position: relative;
+  background-image: url(' ../../images/aboutus.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 30px;
 }
 
 /*------------------Massage---------------*/
 
-.massage {
+#massage {
   background-color: #BCBABA;
-  color:#f2f2f2;
+  color: #f2f2f2;
   margin: 0px;
 }
 
-.massage h1 {
-
-font-weight: bold;
-font-size: 80px;
-display: flex;
-text-align: center;
-margin-left: 25%;
-color: #F2F2F2;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+#masstop {
+  margin: 30px;
 }
 
-.massage p {
-  font-size: 36px;
+.titlemass {
+  font-size: 48px;
+  color: #f2f2f2;
   text-align: center;
-  margin-right: 5%;
 }
+
+#secondline {
+  font-size: 20px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+
+
+
+
+
 
 .progress-bar {
-  background-color:#725646;
-  
+  background-color: #725646;
+
 }
 
 tbody {
   font-weight: normal;
   font-size: 36px;
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
 thead {
   font-size: 36px;
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
 .cover {
-     background-image: url(' ../../images/massagepic.jpg');
-     background-size: cover;
-     background-repeat: no-repeat;
-     position: relative;
+  background-image: url(' ../../images/massagepic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 30px;
 }
 
 
 /*------------Bathing---------*/
 
-bathing {
-  margin: 0px;
+#herobath {
+  margin: 30px;
 }
 
 
@@ -148,24 +176,74 @@ bathing {
 
 #hero-overlay-bath {
   position: absolute;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0px;
   bottom: 0px;
   height: 100%;
-  width:100%;
-  z-index:-5;
+  width: 100%;
+  z-index: -5;
 }
 
 .titlebath {
-  font-size: 80px;
+  font-size: 48px;
   text-align: center;
+  color: #f2f2f2;
+  margin: 30px;
+  padding: 30px;
 }
+
+.couple {
+  color: #f2f2f2;
+  font-size: 30px;
+}
+
+.single {
+  color: #f2f2f2;
+  font-size: 30px;
+}
+
+.bottom {
+  color: #f2f2f2;
+  font-size: 24px;
+  padding-top: 100px;
+  text-align: !important;
+}
+
 /*-----------Offer----------*/
 
 offer {
   margin: 0px;
 }
 
+#top {
+  font-size: 40px;
+  color: #5C3C2A;
+  text-align: center;
+  padding-top: 15%;
+
+
+}
+
+#secondtop {
+  font-size: 40px;
+  color: #B7927E;
+  text-align: center;
+}
+
+#bottom {
+  font-size: 24px;
+  color: #5C3C2A;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15%;
+}
+
+#signplus {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 40%;
+}
 
 
 #hero-offer {
@@ -207,22 +285,33 @@ form {
 
 #hero-overlay-cal {
   position: absolute;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0px;
   bottom: 0px;
   height: 100%;
-  width:100%;
-  z-index:-5;
+  width: 100%;
+  z-index: -5;
 }
 
-#form {
-  color: #f2f2f2;
-  position: center;
-  }
-  
-  .h1 form {
-    position: center;
-  }
+form {
+  padding: 15%;
 
+}
+
+
+.formt {
+  color: #f2f2f2;
+  font-size: 48px;
+  padding-top: 15%;
+  text-align: center;
+}
+
+.form-group {
+  color: #f2f2f2;
+  font-size: 30px;
+  text-align: left;
+  margin-top: 30px;
+
+}
 
 /*--------Footer------*/
