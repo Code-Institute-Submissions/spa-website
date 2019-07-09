@@ -2,16 +2,24 @@
 
 body {
   overflow-x: hidden;
+  padding-top: 56px;
 }
 
 /*-----Navigation bar----*/
 
+nav {
+  color: #f1f1f1;
+  background-color: #C6A898;
+}
 .navbar-brand {
   height: 2rem;
   color: #f2f2f2;
   font-family: inherit;
-  font-size: 24px;
+  font-size: 32px;
+  padding-bottom: 30px;
 }
+
+
 
 /*------Landing Page----*/
 
@@ -26,11 +34,12 @@ body {
 }
 
 #titlepg {
-  text-align: center;
+
   margin-top: 45%;
   font-size: 96px;
   color: #C6A898;
   text-shadow: 1px 1px 2px black;
+  position: center center;
 }
 
 
@@ -124,12 +133,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
-
-
 .progress-bar {
   background-color: #725646;
 
@@ -147,7 +150,7 @@ thead {
 }
 
 .cover {
-  background-image: url(' ../../images/massagepic.jpg');
+  background-image: url('../../images/massagepic.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -157,11 +160,9 @@ thead {
 
 /*------------Bathing---------*/
 
-#herobath {
-  margin: 30px;
+bathing {
+  margin: 0px;
 }
-
-
 
 #hero-bath {
   background-image: url('../../images/bath.jpg');
@@ -314,4 +315,28 @@ form {
 
 }
 
+#buttonform {
+  background-color: #f2f2f2;
+  color: #5C3C2A;
+  border-color: #f2f2f2;
+  position: center center;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
 /*--------Footer------*/
+
+#icons {
+  
+  color: #f1f1f1;
+  background-color: #C6A898;
+  position: center center;
+  
+
+
+
+
+
+
+
+}
