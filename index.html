@@ -22,7 +22,7 @@
       <div>
         <ul class="navbar-nav ml-auto toptitle">
           <li class="nav-item">
-            <a class="navbar-brand" href="#">Unwind</a>
+            <a class="navbar-brand" href="#home">Unwind</a>
           </li>
         </ul>
       </div>
@@ -57,16 +57,10 @@
   <!---------------------------------Landing Page-------------------------------->
 
   <div class="home-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="home-text">
-            <h1 id="titlepg">Take time for yourself.</h1>
-          </div>
-          <button type="button" class="btn-btn-primary btn-lg" id="buttonpg">Book Now</button>
-        </div>
-      </div>
+    <div class="home-text">
+      <h1 id="titlepg">Take time for yourself.</h1>
     </div>
+    <button type="button" class="btn-btn-primary btn-lg" id="buttonpg" href="#form">Book Now</button>
   </div>
 
 
@@ -112,7 +106,7 @@
           <div id="secondline">
             <p>Choose what suits you by type and intensity</p>
           </div>
-          <div class="container">
+          <div class="containerlist">
             <div class="row">
               <div class="col-12 col-md-6">
                 Aromatherapy 45mins- €50,00
@@ -173,10 +167,12 @@
       <div id="hero-overlay-bath">
         <div class="col-md-12">
           <h1 class="titlebath">Deluxe Bathing Room</h1>
-          <i class="fal fa-user-friends"></i>
-          <p class="couple">1 hour bath for a couple- €60,00</p>
-          <i class="far fa-user-alt"></i>
-          <p class="single">1 hour bath for one person- €45,00</p>
+          <div id="textbath">
+            <i class="fal fa-user-friends"></i>
+            <p class="couple">1 hour bath for a couple- €60,00</p>
+            <i class="far fa-user-alt"></i>
+            <p class="single">1 hour bath for one person- €45,00</p>
+          </div>
           <p class="bottom"> Need extra time? 50% off on the next hour</p>
         </div>
       </div>
@@ -192,7 +188,7 @@
       <div class="container">
         <h1 id="top">Do you think it can get any better?</h1>
         <h2 id="secondtop">Check this out!</h2>
-        <div class="row">
+        <div class="row" id="roundpics">
           <div class="col-sm-4">
             <img src="images/massagepic.jpg" class="rounded-circle" alt="massage" width="280" height="280">
           </div>
@@ -202,8 +198,9 @@
           <div class="col-sm-4">
             <img src="./images/bath.jpg" class="rounded-circle" alt="massage" width="280" height="280">
           </div>
-          <p id="bottom">Buy any massage plus 1 hour bath and get 25%off the total price</p>
         </div>
+        <p id="bottom">Buy any massage plus 1 hour bath and get 25%off the total price</p>
+
       </div>
     </div>
   </section>
@@ -234,15 +231,16 @@
     </div>
   </section>
 
+<!-----------------------------------------end---------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js "></script>
+  <script type="text/javascript " src="./libraries/bootstrap.min.js "></script>
 
-
-
-  <!------------Footer---------->
-  <footer class="page-footer font-small cyan darken-3 ">
-    <div class="container ">
+<!------------Footer---------->
+  <footer class="page-footer font-small cyan darken-3" id="footerpg">
+    <div class="container">
       <div class="row" id="icons">
-        <div class="col-md-12 py-5 ">
-          <div class="mb-5 flex-center">
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center" id="socialmedia">
             <a class="fb-ic ">
             <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x "> </i>
           </a>
@@ -257,10 +255,6 @@
       </div>
     </div>
   </footer>
-  <!-----------------------------------------end---------------------------->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js "></script>
-  <script type="text/javascript " src="./libraries/bootstrap.min.js "></script>
-
 </body>
 
 </html>
