@@ -56,11 +56,17 @@
 
   <!---------------------------------Landing Page-------------------------------->
 
-  <div class="home-area">
+  <div class="home-area" id="home">
     <div class="home-text">
       <h1 id="titlepg">Take time for yourself.</h1>
     </div>
-    <button type="button" class="btn-btn-primary btn-lg" id="buttonpg" href="#form">Book Now</button>
+    <br>
+    <br>
+    <div class="button">
+      <button type="button" class="btn-btn-primary btn-lg"  href="#form" id="buttonpg">Book Now</button>
+    </div>
+    </br>
+    </br>
   </div>
 
 
@@ -109,22 +115,22 @@
           <div class="containerlist">
             <div class="row">
               <div class="col-12 col-md-6">
-                Aromatherapy 45mins- €50,00
+                Trigger point
               </div>
               <div class="col-12 col-md-6">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">low</div>
+                  <div class="progress-bar-low" role="progressbar" style="width: 25%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">low</div>
                 </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12 col-md-6">
-                Swedish 60mins- €45,00
+                Swedish
               </div>
               <div class="col-12 col-md-6">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">medium</div>
+                  <div class="progress-bar-medium" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">medium</div>
                 </div>
               </div>
             </div>
@@ -132,28 +138,40 @@
 
             <div class="row">
               <div class="col-12 col-md-6">
-                Deep Tissue 30mins- €40,00
+                Deep Tissue
               </div>
               <div class="col-12 col-md-6">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">high</div>
+                  <div class="progress-bar-high" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">high</div>
                 </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12 col-md-6">
-                Hot Stone 45mins- €65,00
+                Hot Stone
               </div>
               <div class="col-12 col-md-6">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">high</div>
+                  <div class="progress-bar-high" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">high</div>
+                </div>
+
+
+              </div>
+              <div class="circles">
+                <div class="row">
+                  <div class="col-12">
+                    <span><i class="fas fa-square" id="low-square"></i> 45 minutes - €45,00</span><br>
+                    <span><i class="fas fa-square" id="medium-square"></i> 60 minutes - €55.00</span><br>
+                    <span><i class="fas fa-square" id="high-square"></i> 30 minutes - €65,00</i></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
 
   </section>
@@ -168,10 +186,8 @@
         <div class="col-md-12">
           <h1 class="titlebath">Deluxe Bathing Room</h1>
           <div id="textbath">
-            <i class="fal fa-user-friends"></i>
-            <p class="couple">1 hour bath for a couple- €60,00</p>
-            <i class="far fa-user-alt"></i>
             <p class="single">1 hour bath for one person- €45,00</p>
+            <p class="couple">1 hour bath for a couple- €60,00</p>
           </div>
           <p class="bottom"> Need extra time? 50% off on the next hour</p>
         </div>
@@ -189,20 +205,19 @@
         <h1 id="top">Do you think it can get any better?</h1>
         <h2 id="secondtop">Check this out!</h2>
         <div class="row" id="roundpics">
-          <div class="col-sm-4">
-            <img src="images/massagepic.jpg" class="rounded-circle" alt="massage" width="280" height="280">
+          <div class="col-sm-5">
+            <img src="images/massagepic.jpg" class="rounded-circle" alt="massage">
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-2">
             <p id="signplus">+</p>
           </div>
-          <div class="col-sm-4">
-            <img src="./images/bath.jpg" class="rounded-circle" alt="massage" width="280" height="280">
+          <div class="col-sm-5">
+            <img src="./images/bath.jpg" class="rounded-circle" alt="bath">
           </div>
+           <p id="bottom">Buy any massage plus 1 hour bath and get 25%off the total price</p>
         </div>
-        <p id="bottom">Buy any massage plus 1 hour bath and get 25%off the total price</p>
-
-      </div>
-    </div>
+     
+      
   </section>
 
   <!--------------------------------------Form--------------->
@@ -231,30 +246,22 @@
     </div>
   </section>
 
-<!-----------------------------------------end---------------------------->
+
+
+  <!------------Footer---------->
+  <section id="footer" class="footer">
+    <div class="text-center center-block">
+      <p class="txt-footer">- unwind.com -</p>
+      <br />
+      <a href="https://www.facebook.com/unwind"><i class="fa fa-facebook-square fa-3x social"></i></a>
+      <a href="https://twitter.com/unwind"><i class="fa fa-twitter-square fa-3x social"></i></a>
+      <a href="mailto:unwind@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+  </section>
+  <!-----------------------------------------end---------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js "></script>
   <script type="text/javascript " src="./libraries/bootstrap.min.js "></script>
 
-<!------------Footer---------->
-  <footer class="page-footer font-small cyan darken-3" id="footerpg">
-    <div class="container">
-      <div class="row" id="icons">
-        <div class="col-md-12 py-5">
-          <div class="mb-5 flex-center" id="socialmedia">
-            <a class="fb-ic ">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x "> </i>
-          </a>
-            <a class="tw-ic ">
-            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x "> </i>
-          </a>
-            <a class="ins-ic ">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x "> </i>
-          </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>

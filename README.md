@@ -4,7 +4,7 @@ User Centric Front End Development
 This is my first project showing what I've learned about HTML, CSS, Boostrap, Github and UX.
 
 ## Demo
-A live demo can be accessed at https://github.com/suzanaferreira/my-first-website
+A live demo can be accessed at https://github.com/suzanaferreira/spa-website
 
 ## UX
 
