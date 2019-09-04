@@ -30,7 +30,6 @@ nav {
 /*------Landing Page----*/
 
 .home-area {
-  background-attachment: fixed;
   background: url('../../images/landing.jpg');
   background-position: center center;
   -webkit-background-size: cover;
@@ -42,10 +41,11 @@ nav {
 .home-text {
   margin: 0 auto;
   text-align: center;
+  height: auto;
 }
 
 #titlepg {
-  margin-top: 60%;
+  margin-top: 45%;
   font-size: 84px;
   padding: 30px;
   color: #C6A898;
@@ -60,23 +60,43 @@ nav {
   font-weight: bold;
   display: block;
   margin: 0 auto;
+  margin-top: 10%;
+
 
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   #buttonpg {
-    margin-top: 30%;
+    margin-top: 20%;
     font-size: 36px;
     padding: 14px 40px;
   }
-  
+
+  #titlepg {
+    margin-top: 40%;
+  }
+}
+
+@media (max-width: 360px) {
+  #titlepg {
+    font-size: 54px;
+
+  }
+
+  #buttonpg {
+    margin-top: 20%;
+
+  }
+}
+
+@media (min-width: 1024px) {
   #titlepg {
     margin-top: 50%;
   }
 }
 
 
-  
+
 
 /*--------------About Us----------*/
 
@@ -100,10 +120,10 @@ nav {
 }
 
 .important {
-  padding: 30px 30px 20px;
+  padding: 40px 30px 40px;
   text-align: center;
   color: #5C3C2A;
-  font-size: 48px;
+  font-size: 54px;
   line-height: 44px;
 }
 
@@ -112,7 +132,7 @@ nav {
   text-align: left;
   font-size: 24px;
   color: #5C3C2A;
-  line-height: 24px;
+  line-height: 40px;
 
 }
 
@@ -130,6 +150,12 @@ nav {
 
 }
 
+@media (min-width: 700px) and (max-width: 1000px) {
+  .description p {
+    line-height: 30px;
+
+  }
+}
 
 
 
@@ -159,13 +185,15 @@ nav {
 }
 
 .titlemass {
-  font-size: 48px;
+  font-size: 54px;
   color: #f2f2f2;
   text-align: center;
+  padding: 40px 30px 40px;
+
 }
 
 #secondline {
-  font-size: 20px;
+  font-size: 24px;
   color: #f2f2f2;
   text-align: center;
 }
@@ -176,6 +204,10 @@ nav {
   font-size: 24px;
   line-height: 70px;
   padding: 30px;
+}
+
+#bar {
+  margin-top: 30px;
 }
 
 .progress-bar-low {
@@ -218,10 +250,17 @@ thead {
   color: #f2f2f2;
 }
 
-@media (min-width: 400px) {
-  .circles {
-    padding: 20px;
-    padding-top: 60px;
+
+
+@media (max-width: 320px) {
+  .containerlist {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 700px) and (max-width:1000px) {
+  .containerlist {
+    padding: 10px;
   }
 }
 
@@ -257,7 +296,7 @@ bathing {
   display: block;
   margin: 0 auto;
   padding: 30px;
-  padding-top: 110px;
+  padding-top: 130px;
 }
 
 .titlebath {
@@ -268,33 +307,78 @@ bathing {
 
 }
 
-
-
 .bottom {
   color: #f2f2f2;
   font-size: 24px;
-  padding-top: 240px;
+  padding-top: 200px;
   text-align: center;
 
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   #textbath {
-    font-size: 36px;
-    padding: 80px;
-    padding-top: 280px;
+    font-size: 24px;
+    padding: 70px;
+    padding-top: 240px;
     margin-left: 5%;
   }
 
   .bottom {
     font-size: 36px;
-    padding-top: 400px;
+
+    padding-top: 240px;
   }
 
   .titlebath {
     font-size: 54px;
     margin-top: 130px;
 
+  }
+}
+
+@media (max-width: 320px) {
+  .bottom {
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .titlebath {
+    font-size: 48px;
+    margin-top: 50px;
+  }
+
+  #textbath {
+    font-size: 18px;
+    padding: 5px;
+    padding-top: 60px;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .titlebath {
+    margin-top: 150px;
+  }
+
+  #textbath {
+    font-size: 36px;
+    padding: 30px;
+    padding-top: 350px;
+    margin-left: 5%;
+  }
+
+  .bottom {
+    font-size: 36px;
+    padding-top: 450px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-height: 640px) and (max-height: 730px) {
+  .bottom {
+    padding-top: 100px;
+    padding-bottom: 30px;
   }
 }
 
@@ -309,6 +393,16 @@ bathing {
   bottom: 0;
   height: 100vh;
   z-index: -10;
+}
+
+#roundpics {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  float: none;
 }
 
 .rounded-circle {
@@ -354,29 +448,101 @@ offer {
 
 }
 
-@media (min-width: 400px) {
+@media (max-width: 320px) {
+  #bottom {
+    font-size: 12px;
+    padding-top: 0px;
+  }
+
+  #signplus {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .rounded-circle {
+    width: 280px;
+    height: 280px;
+  }
+
+  #roundpics {
+    margin-top: 160px;
+  }
+
+  #bottom {
+    font-size: 36px;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 1000px) {
   .rounded-circle {
     width: 380px;
     height: 380px;
-    display: block;
-    margin: 0 auto;
+    margin-top: 10px;
+
+
   }
 
+  #roundpics {
+    margin-top: 190px;
+  }
+
+  #signplus {
+    padding-top: 70px;
+    padding-left: 10px;
+  }
 
   #bottom {
-    font-size: 24px;
-    margin-top: 30%;
-    margin-left: 8%;
-  }
-  
-  #roundpics {
-    padding-top: 200px;
-  }
-  
-  #signplus {
-    padding-top: 180px;
+    font-size: 36px;
+    margin: 0 auto;
+    margin-top: 220px;
   }
 }
+
+@media (max-height: 670px) {
+  #top {
+    font-size: 18px;
+    padding-top: 15%;
+  }
+
+  .rounded-circle {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  #signplus {
+    font-size: 18px;
+
+  }
+
+  #bottom {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  #secondtop {
+    font-size: 18px;
+  }
+
+
+}
+
+@media (min-height: 730px) and (max-height: 736px) {
+  #top,
+  #secondtop {
+    font-size: 24px;
+
+
+
+  }
+
+}
+
 
 /*----------Form----------*/
 
@@ -434,17 +600,51 @@ form {
   font-weight: bold;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   #buttonform {
     margin-top: 30%;
-    font-size: 24px;
     padding: 14px 40px;
+    
+  }
+  
+}
+
+@media (max-width: 360px) {
+
+  .formt {
+    font-size: 24px;
+    padding-top: 15%;
+
+  }
+
+  .form-group {
+    font-size: 18px;
+    margin-top: 1px;
   }
 }
 
+@media (min-width: 1000px) {
+  .form-group {
+    font-size: 36px;
+  }
+ 
+  #buttonform {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+}
+
+@media (min-height: 666px) and (max-height: 737px) {
+  .form-group {
+   
+margin-top: 5px;
+
+  }
+}
 
 /*--------Footer------*/
 

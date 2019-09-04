@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <title>Spa Website</title>
 </head>
 
@@ -60,13 +63,9 @@
     <div class="home-text">
       <h1 id="titlepg">Take time for yourself.</h1>
     </div>
-    <br>
-    <br>
     <div class="button">
-      <button type="button" class="btn-btn-primary btn-lg"  href="#form" id="buttonpg">Book Now</button>
+      <button type="button" class="btn-btn-primary btn-lg" href="#form" id="buttonpg">Book Now</button>
     </div>
-    </br>
-    </br>
   </div>
 
 
@@ -117,7 +116,7 @@
               <div class="col-12 col-md-6">
                 Trigger point
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6" id="bar">
                 <div class="progress">
                   <div class="progress-bar-low" role="progressbar" style="width: 25%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">low</div>
                 </div>
@@ -128,7 +127,7 @@
               <div class="col-12 col-md-6">
                 Swedish
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6" id="bar">
                 <div class="progress">
                   <div class="progress-bar-medium" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">medium</div>
                 </div>
@@ -140,7 +139,7 @@
               <div class="col-12 col-md-6">
                 Deep Tissue
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6" id="bar">
                 <div class="progress">
                   <div class="progress-bar-high" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">high</div>
                 </div>
@@ -151,7 +150,7 @@
               <div class="col-12 col-md-6">
                 Hot Stone
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6" id="bar">
                 <div class="progress">
                   <div class="progress-bar-high" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">high</div>
                 </div>
@@ -162,7 +161,7 @@
                 <div class="row">
                   <div class="col-12">
                     <span><i class="fas fa-square" id="low-square"></i> 45 minutes - €45,00</span><br>
-                    <span><i class="fas fa-square" id="medium-square"></i> 60 minutes - €55.00</span><br>
+                    <span><i class="fas fa-square" id="medium-square"></i> 60 minutes - €55,00</span><br>
                     <span><i class="fas fa-square" id="high-square"></i> 30 minutes - €65,00</i></span>
                   </div>
                 </div>
@@ -186,8 +185,9 @@
         <div class="col-md-12">
           <h1 class="titlebath">Deluxe Bathing Room</h1>
           <div id="textbath">
-            <p class="single">1 hour bath for one person- €45,00</p>
-            <p class="couple">1 hour bath for a couple- €60,00</p>
+            <span><i class="fa fa-user-alt"></i>  1 hour bath for one person- €45,00</span>
+            </br>
+           <span><i class="fa fa-user-friends"></i> 1 hour bath for a couple- €60,00</span>
           </div>
           <p class="bottom"> Need extra time? 50% off on the next hour</p>
         </div>
@@ -214,10 +214,10 @@
           <div class="col-sm-5">
             <img src="./images/bath.jpg" class="rounded-circle" alt="bath">
           </div>
-           <p id="bottom">Buy any massage plus 1 hour bath and get 25%off the total price</p>
+          <p id="bottom">Buy any massage plus 1 hour bath and get 25% off the total price</p>
         </div>
-     
-      
+
+
   </section>
 
   <!--------------------------------------Form--------------->
@@ -253,9 +253,9 @@
     <div class="text-center center-block">
       <p class="txt-footer">- unwind.com -</p>
       <br />
-      <a href="https://www.facebook.com/unwind"><i class="fa fa-facebook-square fa-3x social"></i></a>
-      <a href="https://twitter.com/unwind"><i class="fa fa-twitter-square fa-3x social"></i></a>
-      <a href="mailto:unwind@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+      <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-3x social"></i></a>
+      <a href="https://twitter.com"><i class="fa fa-twitter-square fa-3x social"></i></a>
+      <a href="mailto:unwindnow@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
     </div>
   </section>
   <!-----------------------------------------end---------------------------->
