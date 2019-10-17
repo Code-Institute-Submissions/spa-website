@@ -157,7 +157,11 @@ nav {
   }
 }
 
-
+@media (max-width: 600px) {
+  #about {
+   height: 100vh;
+  }
+}
 
 
 /*------------------Massage---------------*/
@@ -262,6 +266,13 @@ thead {
   .containerlist {
     padding: 10px;
   }
+}
+
+@media (max-width: 600px) {
+  #cover {
+    height: 100vh;
+  }
+  
 }
 
 /*------------Bathing---------*/
