@@ -3,6 +3,9 @@
 body {
   overflow-x: hidden;
   margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 /*-----Navigation bar----*/
@@ -159,7 +162,7 @@ nav {
 
 @media (max-width: 600px) {
   #about {
-   height: 100vh;
+    height: 100vh;
   }
 }
 
@@ -210,7 +213,10 @@ nav {
   padding: 30px;
 }
 
-#bar {
+#bar,
+#bar1,
+#bar2,
+#bar3 {
   margin-top: 30px;
 }
 
@@ -272,7 +278,7 @@ thead {
   #cover {
     height: 100vh;
   }
-  
+
 }
 
 /*------------Bathing---------*/
@@ -559,6 +565,9 @@ offer {
 
 form {
   margin: 0px;
+  padding: 15%;
+  height: 100%;
+  width: 100%;
 }
 
 #hero-cal {
@@ -583,16 +592,9 @@ form {
   z-index: -5;
 }
 
-form {
-  padding: 15%;
-
-}
-
-
 .formt {
   color: #f2f2f2;
   font-size: 48px;
-  padding-top: 15%;
   text-align: center;
 }
 
@@ -600,7 +602,7 @@ form {
   color: #f2f2f2;
   font-size: 30px;
   text-align: left;
-  margin-top: 30px;
+  margin-top: 15px;
 
 }
 
@@ -611,74 +613,51 @@ form {
   font-weight: bold;
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 10%;
 }
 
-@media (min-width: 600px) {
-  #buttonform {
-    margin-top: 30%;
-    padding: 14px 40px;
-    
-  }
-  
-}
 
-@media (max-width: 360px) {
 
-  .formt {
-    font-size: 24px;
-    padding-top: 15%;
-
-  }
-
-  .form-group {
-    font-size: 18px;
-    margin-top: 1px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .form-group {
-    font-size: 36px;
-  }
- 
-  #buttonform {
-    font-size: 36px;
-    font-weight: bold;
-  }
-  
-}
-
-@media (min-height: 666px) and (max-height: 737px) {
-  .form-group {
-   
-margin-top: 5px;
-
-  }
-}
 
 /*--------Footer------*/
 
+.footer-main-div {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #C6A898;
+  padding: 20px 0px;
 
 
-#footer {
-  background-color: #C6A898;
+
 }
 
-.txt-footer {
-  color: #f2f2f2;
+.footer-social-icons {
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
-.fab, .far {
-  color: #f2f2f2;
-  padding: 10px;
-  font-size: 30px;
-  width: 50px;
+.footer-social-icons ul {
+  margin: 0px;
+  padding: 0px;
   text-align: center;
-  text-decoration: none;
-  
 }
 
+.footer-social-icons ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background: #C6A898;
+}
 
+.footer-social-icons ul li a {
+  color: #f2f2f2;
+  font-size: 25px;
+}
 
-  
+.footer-social-icons ul li a i {
+  line-height: 50px;
+}
