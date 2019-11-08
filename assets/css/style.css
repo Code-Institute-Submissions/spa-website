@@ -48,12 +48,12 @@ nav {
 }
 
 #titlepg {
-  margin-top: 45%;
+
   font-size: 84px;
   padding: 30px;
   color: #C6A898;
   text-shadow: 2px 1px 2px black;
-
+  height: auto;
 }
 
 #buttonpg {
@@ -64,8 +64,56 @@ nav {
   display: block;
   margin: 0 auto;
   margin-top: 10%;
+}
+
+@media (max-width:320px) {
+  #titlepg {
+    margin-top: 20%;
+    font-size: 68px;
+
+  }
+
+  #buttonpg {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width:340px) and (max-width:360px) {
+  #titlepg {
+    margin-top: 30%;
+    font-size: 72px;
+
+  }
+
+  #buttonpg {
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+}
 
 
+
+@media (min-width: 400px) and (max-width: 413px) {
+  #titlepg {
+    margin-top: 40%;
+  }
+
+  #buttonpg {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+}
+
+@media (min-width: 414px) and (max-width:590px) {
+  #titlepg {
+    margin-top: 30%;
+  }
+
+  #buttonpg {
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
 }
 
 @media (min-width: 600px) {
@@ -80,21 +128,26 @@ nav {
   }
 }
 
-@media (max-width: 360px) {
-  #titlepg {
-    font-size: 54px;
 
-  }
-
-  #buttonpg {
-    margin-top: 20%;
-
-  }
-}
 
 @media (min-width: 1024px) {
   #titlepg {
     margin-top: 50%;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 380px) {
+  #titlepg {
+    margin-top: 30%;
+    font-size: 72px;
+    height: auto;
+
+  }
+
+  #buttonpg {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    height: auto;
   }
 }
 
@@ -177,6 +230,7 @@ nav {
   position: relative;
   padding: 30px;
   margin: 0px;
+  width: 100%;
 }
 
 
@@ -265,7 +319,17 @@ thead {
 @media (max-width: 320px) {
   .containerlist {
     font-size: 18px;
+    padding-right: 60px;
   }
+
+  #secondline {
+    padding-right: 35px;
+  }
+
+  .circles {
+    padding-left: 15px;
+  }
+
 }
 
 @media (min-width: 700px) and (max-width:1000px) {
@@ -553,9 +617,6 @@ offer {
   #top,
   #secondtop {
     font-size: 24px;
-
-
-
   }
 
 }
@@ -565,9 +626,7 @@ offer {
 
 form {
   margin: 0px;
-  padding: 15%;
-  height: 100%;
-  width: 100%;
+
 }
 
 #hero-cal {
@@ -614,40 +673,142 @@ form {
   display: block;
   margin: 0 auto;
   margin-top: 10%;
+  margin-bottom: 20%;
 }
 
+@media (max-width: 320px) {
+  .formt {
+    font-size: 36px;
+    margin-top: 15%;
+  }
 
+  .form-group {
+    font-size: 24px;
+    margin: 5%;
+    margin-top: 10%;
+  }
+}
+
+@media (min-width:325px) and (max-width:415px) {
+  .formt {
+    font-size: 36px;
+    margin-top: 15%;
+  }
+
+  .form-group {
+    font-size: 24px;
+    margin: 5%;
+    margin-top: 15%;
+  }
+
+  #buttonform {
+    margin-top: 10%;
+    margin-bottom: 20%;
+
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .formt {
+    font-size: 48px;
+    margin-top: 15%;
+  }
+
+  .form-group {
+    font-size: 36px;
+    margin: 5%;
+    margin-top: 10%;
+  }
+
+  #buttonform {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 36px;
+  }
+
+}
+
+@media (min-width:1024px) and (max-width:1118px) {
+  .formt {
+    font-size: 68px;
+    margin-top: 20%;
+  }
+
+  .form-group {
+    font-size: 54px;
+    margin: 5%;
+    margin-top: 10%;
+  }
+
+  #buttonform {
+    margin-top: 15%;
+    margin-bottom: 20%;
+    font-size: 36px;
+  }
+
+  .form-control {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:1112px) {
+  .formt {
+    font-size: 84px;
+    margin-top: 10%;
+  }
+
+  .form-group {
+    font-size: 54px;
+    margin: 5%;
+  }
+
+  #buttonform {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 48px;
+  }
+}
 
 
 /*--------Footer------*/
 
 .footer-main-div {
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
-  margin: auto;
   background: #C6A898;
   padding: 20px 0px;
+}
 
+#address {
+  color: #f2f2f2;
+  font-size: 18px;
+  padding-left: 30px;
+}
 
-
+#sicons {
+  color: #f2f2f2;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .footer-social-icons {
   width: 100%;
-  height: auto;
-  margin: auto;
+
 }
 
 .footer-social-icons ul {
   margin: 0px;
   padding: 0px;
-  text-align: center;
 }
 
 .footer-social-icons ul li {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   margin: 0px 10px;
   border-radius: 100%;
   background: #C6A898;
@@ -659,5 +820,17 @@ form {
 }
 
 .footer-social-icons ul li a i {
-  line-height: 50px;
+  line-height: 30px;
+}
+
+@media (min-width:760px){
+  #address {
+  padding-left: 100px;
+}
+}
+
+@media  (min-width:1024px) {
+  #sicons {
+    padding-right: 1px;
+  }
 }
