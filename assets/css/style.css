@@ -48,7 +48,6 @@ nav {
 }
 
 #titlepg {
-
   font-size: 84px;
   padding: 30px;
   color: #C6A898;
@@ -91,8 +90,6 @@ nav {
     margin-bottom: 10%;
   }
 }
-
-
 
 @media (min-width: 400px) and (max-width: 413px) {
   #titlepg {
@@ -551,6 +548,13 @@ offer {
   }
 }
 
+@media (min-width:330px) and (max-width:361px){
+  .rounded-circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 @media (min-height:666px) and (max-height:668px) {
   #top {
     font-size: 25px;
@@ -625,9 +629,6 @@ offer {
 
 /*----------Form----------*/
 
-form {
-  min-height: 100%;
-}
 
 #hero-cal {
   background-attachment: fixed;
@@ -638,19 +639,25 @@ form {
   top: 0;
   bottom: 0;
   height: 100vh;
-  z-index: -10;
+  z-index: 5;
   overflow: auto;
-  padding-bottom: 25px;
+  width: 100%;
+
 }
 
 #hero-overlay-cal {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  top: 0px;
-  bottom: 0px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  z-index: -5;
+  overflow: auto;
+  z-index: 10;
+
+
 }
 
 .formt {
@@ -665,6 +672,7 @@ form {
   text-align: left;
   margin-top: 15px;
 
+
 }
 
 #buttonform {
@@ -675,7 +683,7 @@ form {
   display: block;
   margin: 0 auto;
   margin-top: 10%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 @media (max-width: 320px) {
@@ -752,9 +760,10 @@ form {
   }
 }
 
-@media (min-width:1119px) {
+@media (min-width:1119px) and (max-width:1880px) {
   #form {
-    bottom: auto;
+    height: 100vh;
+    bottom: 0;
   }
 
   .formt {
@@ -767,17 +776,41 @@ form {
     margin: 5%;
     margin-top: 5%;
   }
-
-  #buttonform {
-
-    font-size: 50px;
-  }
-
   .form-control {
     font-size: 48px;
   }
+  #buttonform {
+    font-size: 50px;
+    bottom: auto;
+  }
+
+
 }
 
+@media (min-width:1880px) {
+
+  form {
+    height: 100vh;
+  }
+  .formt {
+    font-size: 80px;
+    margin-top: 5%;
+  }
+
+  .form-group {
+    font-size: 64px;
+    margin: 10%;
+    margin-top: 5%;
+  }
+  .form-control {
+    font-size: 48px;
+  }
+
+  #buttonform {
+    font-size: 50px;
+    margin-bottom: 30%;
+  }
+}
 
 /*--------Footer------*/
 
